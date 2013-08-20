@@ -1,0 +1,32 @@
+<?php
+/* messages */
+define('_404','404 - Ta strona nie istnieje.');
+define('CLASS_NOT_EXISTS','Klasa <b><VALUE/></b> nie istnieje.');
+define('CONFIG_SETTINGS_NOT_SAVED','Ustawienia konfiguracji nie mógł być zapisany.');
+define('CONFIG_SETTINGS_SAVED', 'Ustawienia konfiguracji pomyślnie.');
+define('DELETE_PAGE_CONFIRM','Czy na pewno chcesz usunąć stronę <b><VALUE/></b>?  Ta akcja nie może być cofnięte.');
+define('DELETE_USER_CONFIRM','Czy na pewno chcesz usunąć użytkownika <b><VALUE/></b>?  Ta akcja nie może być cofnięte.');
+define('ENTER_REQUIRED','Proszę podać wymagane informacje.'); 
+define('ERROR_CACHE_CLEARED','Nie można usunąć z pamięci podręcznej stron.');
+define('ERROR_LOGIN','Nieprawidłowe poświadczenia.');
+define('ERROR_PAGE_CREATE','Strona nie może być utworzona.');
+define('ERROR_PAGE_EDIT','Strona nie mogła być aktualizowana.');
+define('ERROR_PAGE_DELETE','Strona nie może zostać usunięta.');
+define('ERROR_USER_DELETE','Użytkownik nie może zostać usunięty.');
+define('ERROR_TITLE_REQUIRED','Pole Nazwa jest wymagane.');
+define('FEATURE_UNAVAILABLE','Ta funkcja nie jest dostępna w systemie operacyjnym.');
+define('MUST_PROVIDE_TEMPLATE_NAME','Należy podać nazwę szablonu.');
+define('NO_ACCESS', 'Nie masz uprawnień, aby otworzyć stronę.');
+define('PAGE_NOT_EXISTS','Strona <VALUE/> nie istnieje.');
+define('PASSWORDS_DO_NOT_MATCH','Hasła nie pasują');
+define('SUCCESS_CACHE_CLEARED','Pamięci podręcznej strony skutecznie usunięte.');
+define('SUCCESS_PAGE_CREATE','Strona utworzona pomyślnie.');
+define('SUCCESS_PAGE_DELETE','Strona pomyślnie usunięty.');
+define('SUCCESS_PAGE_EDIT','Strona pomyślnie zaktualizowane.');
+define('SUCCESS_USER_DELETE','Użytkownik został pomyślnie usunięty.');
+define('TEMPLATE_NOT_EXISTS','Szablon <b><VALUE/></b> nie istnieje.');
+define('USER_CREATED','Użytkownik pomyślnie utworzony.');
+define('USER_EXISTS','Ten użytkownik już istnieje.');
+define('USER_NOT_EXISTS','Ten użytkownik nie istnieje.');
+define('USER_UPDATED','Użytkownik pomyślnie zaktualizowane.');
+define('WARNING_CACHED_PAGES_NOT_PROTECTED','Pamięci podręcznej strony nie będzie chroniony.');
