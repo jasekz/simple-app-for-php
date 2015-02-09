@@ -1,7 +1,8 @@
 <?php if(!defined('SYSTEM')) die('no access');  ?>
 <?php 
 $admin = get_instance('admin');
-if( ! $admin->is_writable()): ?>
+$auth = get_instance('simpleauth'); 
+if( ! $admin->is_writable() && $auth->logged_in() !== false): ?>
 <div class="msg-error">
 Your <b>content</b> and <b>etc</b> directories must be writeable for proper functionality.
 <br>
