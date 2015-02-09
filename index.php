@@ -16,7 +16,7 @@ define('FILE_EXT', '.'.pathinfo(__FILE__, PATHINFO_EXTENSION)); // file extensio
 * ETC:	 				location of etc folder relative to this file (wrap in realpath()) 
 */
 define('DS',"/"); 
-define('TEMPLATES', '/simpleapp/templates');     
+define('TEMPLATES', '/simple-app-for-php/templates');     
 define('SYSTEM', realpath('system'));
 define('CONTENT', realpath('content'));   
 define('CONFIG', realpath('config')); 
