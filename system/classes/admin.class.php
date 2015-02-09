@@ -386,6 +386,16 @@ class Admin{
 		return false;
 	}
 	
+	public function is_writable()
+	{
+	    if(! is_writable(CONTENT) || ! is_writable(ETC))
+	    {
+	        return false;
+	    }
+	    
+	    return true;
+	}
+	
 	/**
 	 * Copies a page directory and frames out a controller
 	 * 
