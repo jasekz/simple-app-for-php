@@ -30,3 +30,4 @@ define('USER_EXISTS','This user already exists.');
 define('USER_NOT_EXISTS','This user does not exist.');
 define('USER_UPDATED','User successfully updated.');
 define('WARNING_CACHED_PAGES_NOT_PROTECTED','Cached pages will not be protected.');
+define('CONFIG_SETTINGS_NOT_SAVED_HTACCESS','Your <b>.htaccess</b> file must be writable to change the settings to SEF urls.');

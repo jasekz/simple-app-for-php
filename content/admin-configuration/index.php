@@ -49,11 +49,16 @@ class Page_admin_configuration {
 				$from = APP_PATH.DS.'.htaccess';
 				$to = APP_PATH.DS.'.htaccess__';
 			}
-			if(file_exists($from))
+			if(file_exists($from) && rename($from,$to))
 			{
-				rename($from,$to);
+				set_msg(CONFIG_SETTINGS_SAVED);
 			}
-			set_msg(CONFIG_SETTINGS_SAVED);
+			else 
+			{
+			    set_error_msg(CONFIG_SETTINGS_NOT_SAVED_HTACCESS);
+        		header('location:'.$_SERVER['HTTP_REFERER']);
+        		exit(0);
+			}
 		}
 		else
 		{

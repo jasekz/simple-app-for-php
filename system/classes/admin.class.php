@@ -386,6 +386,11 @@ class Admin{
 		return false;
 	}
 	
+	/**
+	 * Check if necessary directories are writable for admin functionality
+	 * 
+	 * @return boolean
+	 */
 	public function is_writable()
 	{
 	    if(! is_writable(CONTENT) || ! is_writable(ETC))

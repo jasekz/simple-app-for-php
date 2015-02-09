@@ -30,3 +30,4 @@ define('USER_EXISTS','Ten użytkownik już istnieje.');
 define('USER_NOT_EXISTS','Ten użytkownik nie istnieje.');
 define('USER_UPDATED','Użytkownik pomyślnie zaktualizowane.');
 define('WARNING_CACHED_PAGES_NOT_PROTECTED','Pamięci podręcznej strony nie będzie chroniony.');
+define('CONFIG_SETTINGS_NOT_SAVED_HTACCESS','Twój plik <b>.htaccess</b> musi mieć prawa zapisu do zmiany ustawień adresów SEF.');
