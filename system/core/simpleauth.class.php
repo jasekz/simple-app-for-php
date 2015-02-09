@@ -50,27 +50,27 @@ class Simpleauth {
 		// make sure user doesn't already exist
 		foreach($users as $user)
 		{
-			if($user->email == $email && $user->access_level == $user_access_level)
+			if($user->email == $email && $user->access_level_id == $user_access_level)
 			{
 				return false;
 			}
 		}
 		$user = new stdClass();
-		$user->id = $users[count($users)-1]->id+1;
+		$user->user_id = $users[count($users)-1]->user_id+1;
 		$user->email = $email;
 		$user->password = $this->get_hashed($password);
-		$user->access_level = $user_access_level;
-		$user->first_name = $first_name;
+		$user->access_level_id = $user_access_level;
+		$user->first_name = $first_name; 
 		$user->last_name = $last_name;
 		array_push($users, $user);
 		$users_txt = '';
 		$sep = ':::';
 		foreach($users as $user)
 		{
-			$users_txt .= $user->id
+			$users_txt .= $user->user_id
 						 .$sep.$user->email.$sep
 						 .$user->password.$sep
-						 .$user->access_level.$sep
+						 .$user->access_level_id.$sep
 						 .$user->first_name.$sep
 						 .$user->last_name."\n";
 		}
