@@ -393,7 +393,7 @@ class Admin{
 	 */
 	public function is_writable()
 	{
-	    if(! is_writable(CONTENT) || ! is_writable(ETC))
+	    if(! is_writable(CONTENT) || ! is_writable(ETC) || ! is_writable(CONFIG))
 	    {
 	        return false;
 	    }

@@ -4,7 +4,7 @@ $admin = get_instance('admin');
 $auth = get_instance('simpleauth'); 
 if( ! $admin->is_writable() && $auth->logged_in() !== false): ?>
 <div class="msg-error">
-Your <b>content</b> and <b>etc</b> directories must be writeable for proper functionality.
+Your <b>content</b>, <b>config</b> and <b>etc</b> directories must be writeable for proper functionality.
 <br>
 <b>WARNING: </b> If these are in you web root directory, it is NOT SAFE to make them writable.<br>
 Please see <a href="http://simpleapp.info/documentation/examples/setup.html" target="_blank" >Setting up and securing an app</a> 

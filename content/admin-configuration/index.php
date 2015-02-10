@@ -14,7 +14,7 @@ class Page_admin_configuration {
 	}
 	
 	public function edit()
-	{
+	{			
 		$properties['DEBUG_LOG'] = $_POST['debug_log'];
 		$properties['TEMPLATE'] = $_POST['template'];   
 		$properties['ADMIN_TEMPLATE'] = $_POST['admin_template']; 
@@ -39,26 +39,7 @@ class Page_admin_configuration {
 		}
 		if($this->admin->set_site_properties($properties))
 		{
-			if($properties['SEF_URLS'])
-			{
-				$from = APP_PATH.DS.'.htaccess__';
-				$to = APP_PATH.DS.'.htaccess';
-			}
-			else
-			{
-				$from = APP_PATH.DS.'.htaccess';
-				$to = APP_PATH.DS.'.htaccess__';
-			}
-			if(file_exists($from) && rename($from,$to))
-			{
-				set_msg(CONFIG_SETTINGS_SAVED);
-			}
-			else 
-			{
-			    set_error_msg(CONFIG_SETTINGS_NOT_SAVED_HTACCESS);
-        		header('location:'.$_SERVER['HTTP_REFERER']);
-        		exit(0);
-			}
+			set_msg(CONFIG_SETTINGS_SAVED);
 		}
 		else
 		{
@@ -76,7 +57,8 @@ class Page_admin_configuration {
 		{
 			$redirect = BASE_URL . '/index'.FILE_EXT.'?'.PAGE.'=admin-configuration';
 		}
-		header('location:'.$redirect);
+
+		header('location: '.$redirect);
 		exit(0);
 	}
 	
