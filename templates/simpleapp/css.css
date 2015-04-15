@@ -25,7 +25,7 @@ pre {
 	background:#707199;
 }
 h1#logo {
-	background:url(/simple-app-for-php/templates/simpleapp/images/simple-app-logo.png) no-repeat 0 15px;
+	background:url(images/simple-app-logo.png) no-repeat 0 15px;
 	height:55px;
 	width:156px;
 	text-indent:-9999px;
@@ -206,11 +206,11 @@ th {
 .table-data tbody tr td {background:#EDEBEB;}
 .table-header {background-color:#C7C9C8;}
 
-.icon-edit {background:url(/simple-app-for-php/templates/simpleapp/images/full_page.png) no-repeat;height:16px;width:16px;}
-.icon-search {background:url(/simple-app-for-php/templates/simpleapp/images/search.png) no-repeat;height:16px;width:16px;}
-.icon-delete {background:url(/simple-app-for-php/templates/simpleapp/images/delete.png) no-repeat;height:16px;width:16px;}
-.icon-lock {background:url(/simple-app-for-php/templates/simpleapp/images/lock.png) no-repeat;height:16px;width:16px;float:left;}
-.icon-favorite {background:url(/simple-app-for-php/templates/simpleapp/images/favorite.png) no-repeat;height:16px;width:16px;float:left;}
+.icon-edit {background:url(images/full_page.png) no-repeat;height:16px;width:16px;}
+.icon-search {background:url(images/search.png) no-repeat;height:16px;width:16px;}
+.icon-delete {background:url(images/delete.png) no-repeat;height:16px;width:16px;}
+.icon-lock {background:url(images/lock.png) no-repeat;height:16px;width:16px;float:left;}
+.icon-favorite {background:url(images/favorite.png) no-repeat;height:16px;width:16px;float:left;}
 
 .function {font-weight:bold;color:#003399;font-size:12px;margin-top:10px;}
 .function span {color:#333333;}
@@ -225,11 +225,11 @@ th {
 	padding:5px 0px 5px 35px;
 	margin-bottom:10px;
 }
-.msg-success {border:solid #79EB6C 1px;width:auto;background: #E8F7E6 url(/simple-app-for-php/templates/simpleapp/images/accept.png) no-repeat 5px center;}
-.msg-error {border:solid #EB6C8B 1px;width:auto;background: #F7E6EA url(/simple-app-for-php/templates/simpleapp/images/warning.png) no-repeat 5px center;}
-.msg-warning {border:solid orange 1px;width:auto;background: #FAF8B4 url(/simple-app-for-php/templates/simpleapp/images/warning.png) no-repeat 5px center;}
+.msg-success {border:solid #79EB6C 1px;width:auto;background: #E8F7E6 url(images/accept.png) no-repeat 5px center;}
+.msg-error {border:solid #EB6C8B 1px;width:auto;background: #F7E6EA url(images/warning.png) no-repeat 5px center;}
+.msg-warning {border:solid orange 1px;width:auto;background: #FAF8B4 url(images/warning.png) no-repeat 5px center;}
 .menu-header {padding-top:10px;font-weight:bold;}
-.home {float:right;background:url(/simple-app-for-php/templates/simpleapp/images/protection.png) no-repeat right top;width:24px;height:24px;}
+.home {float:right;background:url(images/protection.png) no-repeat right top;width:24px;height:24px;}
 
 /* pagination */
 .pagination {padding:5px 0px 15px 0px;}
